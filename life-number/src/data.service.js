@@ -4,7 +4,8 @@
   angular.module('DivinationApp')
   .service('DataService', DataService);
 
-  function DataService () {
+  DataService.$inject = ['$http'];
+  function DataService ($http) {
     var service = this;
 
     service.getNumber = function (inputDate) {
@@ -101,6 +102,19 @@
 
     }
 
+    service.getSpiritNumExplanation = function () {
+      return $http.get("../data/spirit-number-explanation.json");
+    }
+
+    service.arrayIntoNum = function (data) {
+      var num;
+          for (var i = 0; i < data.length; i++) {
+            if (data[i] !== 0) {
+              num = i;
+            }
+          }
+      return num;
+    }
 
   }
 })();

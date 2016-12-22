@@ -35,12 +35,6 @@ ul.list-inline {
   margin-left: 0;
 }
 
-td> div:hover {
-  box-shadow: 0 0 5px rgb(108, 225, 246);
-  border: solid 1px rgb(108, 225, 246);
-  transition-duration: .5s;
-}
-
 .jumbotron {
   background-color: white;
   color: CadetBlue;

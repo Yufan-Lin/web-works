@@ -6,9 +6,12 @@
     <p>你的生命靈動數為{{ctrl.lifeNum | lifeNumber}}</h4>
   </div>
   <div class="container">
+    <br>
     <table class="numForm text-center">
       <tr>
-        <td></td>
+        <td>
+          <button class="btn btn-primary btn-lg" ng-click="ctrl.exp((ctrl.getLifeNum() - 1)); ctrl.gotoTop('top')" ui-sref="analysis" type="button" name="button">解析</button>
+        </td>
         <td><div><h1>0</h1><span>{{ctrl.lifeNum[0] | NumToImg: "□"}}</span><span>{{ctrl.innateNum[0] | NumToImg: "O"}}</span><span>{{ctrl.acquiredNum[0] | NumToImg: "△"}}</span></div></td>
         <td></td>
       </tr>

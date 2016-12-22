@@ -24,6 +24,21 @@
     .state('home.result', {
       url: '/result',
       templateUrl: 'src/templates/nol.template.html'
+    })
+
+    .state('analysis', {
+      url: '/analysis',
+      templateUrl: 'src/templates/analysis.template.html'
+    })
+
+    .state('analysis.spn', {
+      url: '/spiritDetail',
+      templateUrl: 'src/templates/analysis.spirit-number-detail.template.html'
+    })
+
+    .state('analysis.inAcNum', {
+      url: '/inAcNumDetail',
+      templateUrl: 'src/templates/analysis.innate-acquired-number.template.html'
     });
   }
 })();
