@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="DivinationApp">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>The Spirit Number of Life</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body ng-controller="DataController as ctrl">
+  <div class="container-fluid title">
+    <h1 ui-sref="about" class="header-bar"><b>生命靈數</b> <small class="text-nowrap">-The Spirit Number of Life-</small></h1>
+  </div>
+  <br>
+  <div class="main-page container">
+
+    <nav class="">
+      <ul class="btn-group-justified list-inline">
+        <li class="btn btn-default" ui-sref="about" ui-sref-active="active">關於靈數</li>
+        <li class="btn btn-default" ui-sref="home" ui-sref-active="active">計算靈數</li>
+      </ul>
+    </nav>
+
+    <hr>
+
+    <div class="row">
+      <div class="">
+        <ui-view></ui-view>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <footer class="footer">
+    <div class="container">
+      <h3>HI</h3>
+    </div>
+  </footer>
+
+    <!-- Libs -->
+    <script src="lib/jquery-3.1.1-min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.js"></script>
+
+    <!-- Main Module -->
+    <script src="src/divination.module.js"></script>
+    <script src="src/route.js"></script>
+    <script src="src/data.service.js"></script>
+    <script src="src/data.controller.js"></script>
+    <script src="src/filter.js"></script>
+
+    </script>
+
+    <!-- Common Module -->
+</body>
+</html>
