@@ -103,7 +103,7 @@
     }
 
     service.getSpiritNumExplanation = function () {
-      return $http.get("../data/spirit-number-explanation.json");
+      return $http.get("data/spirit-number-explanation.json");
     }
 
     service.arrayIntoNum = function (data) {
