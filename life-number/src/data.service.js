@@ -54,39 +54,8 @@
 
     service.numSorting = function (data1, data2) {
       for (var i = 0; i < data1.length; i++) {
-        switch (data1[i]) {
-          case 0:
-            data2[0] += 1;
-            break;
-          case 1:
-            data2[1] += 1;
-            break;
-          case 2:
-            data2[2] += 1;
-            break;
-          case 3:
-            data2[3] += 1;
-            break;
-          case 4:
-            data2[4] += 1;
-            break;
-          case 5:
-            data2[5] += 1;
-            break;
-          case 6:
-            data2[6] += 1;
-            break;
-          case 7:
-            data2[7] += 1;
-            break;
-          case 8:
-            data2[8] += 1;
-            break;
-          case 9:
-            data2[9] += 1;
-            break;
-    }
-  }
+        data2[data1[i]] += 1;
+      }
     }
 
     service.aqcAndLifeNum = function (oriData, aqcNum, lifeNum) {
@@ -106,6 +75,10 @@
       return $http.get("data/spirit-number-explanation.json");
     }
 
+    service.getInAcExplanation = function () {
+      return $http.get('data/innate-acquired-number-explanation.json');
+    }
+
     service.arrayIntoNum = function (data) {
       var num;
           for (var i = 0; i < data.length; i++) {
@@ -115,6 +88,32 @@
           }
       return num;
     }
+
+    service.numIntoType = function (innate, acquired, rec, result) {
+      for (var i = 0; i < innate.length; i++) {
+        if (innate[i] === 0 && acquired[i] === 0) {
+          if (rec[i] !== 0) {
+            result[i] = "rec";
+          }
+          else {
+            result[i] = "empty";
+          }
+        }
+        else if (innate[i] !== 0 && acquired[i] !== 0) {
+          result[i] = "mix";
+        }
+        else {
+          if (innate[i] !== 0) {
+            result[i] = "c" + innate[i].toString();
+            }
+          else {
+              result[i] = "t" + acquired[i].toString();
+          }
+        }
+      }
+    }
+
+
 
   }
 })();

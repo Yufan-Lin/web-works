@@ -6,28 +6,31 @@
 <title>The Spirit Number of Life</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
+<link rel="shortcut icon" href="imgs/favicon.ico">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link href="css/style.css" rel="stylesheet">
 </head>
 <body ng-controller="DataController as ctrl">
-  <div class="container-fluid title">
-    <h1 ui-sref="about" class="header-bar"><b>生命靈數</b> <small class="text-nowrap">-The Spirit Number of Life-</small></h1>
-  </div>
-  <br>
-  <div class="main-page container">
+  <div class="background">
+    <div class="container-fluid title">
+      <h1 ui-sref="about" class="header-bar"><b>生命靈數</b> <small class="text-nowrap">-The Spirit Number of Life-</small></h1>
+    </div>
+    <br>
+    <div class="main-page container">
 
-    <nav id="top" class="">
-      <ul class="btn-group-justified list-inline">
-        <li class="btn btn-default" ui-sref="about" ui-sref-active="active">關於靈數</li>
-        <li class="btn btn-default" ui-sref="home" ui-sref-active="active">計算靈數</li>
-      </ul>
-    </nav>
+      <nav id="top" class="">
+        <ul class="btn-group-justified list-inline">
+          <li class="btn btn-default" ui-sref="about" ui-sref-active="active">關於靈數</li>
+          <li class="btn btn-default" ui-sref="home" ui-sref-active="active">計算靈數</li>
+        </ul>
+      </nav>
 
-    <hr>
+      <hr>
 
-    <div class="row">
-      <div class="">
-        <ui-view></ui-view>
+      <div class="row">
+        <div class="">
+          <ui-view></ui-view>
+        </div>
       </div>
     </div>
   </div>
@@ -36,7 +39,13 @@
 
   <footer class="footer">
     <div class="container">
-      <h3>HI</h3>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>此網站為本人網頁設計所用，靈數內容則參考<ins>林豐儀</ins>老師的&lt;&lt;生命靈數&gt;&gt;講義。</p>
+          <p>此網站所呈現的內容非靈數學的全部，另外還有九宮格連線、流年、五行並論及數字與色彩關係等等。</p>
+          <p>另外祝每個到此網站的人聖誕節快樂和新年快樂啊！！哈哈！！</p>
+        </div>
+      </div>
     </div>
   </footer>
 

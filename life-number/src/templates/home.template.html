@@ -18,7 +18,7 @@
       <input id="input-day" class="input-form" ng-model="ctrl.birthDate.day" type="number"  min="1" max="31"name="day" value="" placeholder="出生日期" required>
     </div>
     <div class="alert alert-danger" role="alert" ng-show="birthdayForm.$invalid && (birthdayForm.year.$touched && birthdayForm.month.$touched && birthdayForm.day.$touched)">輸入錯誤！請再確認出生日期是否輸入正確！</div>
-    <input class="btn btn-primary" ui-sref="home.result" ng-click="ctrl.getBirthData()" type="submit" ng-disabled="birthdayForm.$invalid" value="確認">
+    <input class="btn btn-primary" ui-sref="analysis.result" ng-click="ctrl.getBirthData(); ctrl.exp((ctrl.getLifeNum() - 1))" type="submit" ng-disabled="birthdayForm.$invalid" value="確認">
   </form>
 </div>
 </div>

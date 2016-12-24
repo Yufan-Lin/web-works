@@ -2,8 +2,13 @@
   font-family: "microsoft jhenghei";
 }
 
-body {
+.background {
   background: url("../imgs/skulls.png");
+}
+
+
+body {
+  background-color: gray;
 }
 .title {
   background: white;
@@ -16,6 +21,11 @@ body {
 
 div.container {
 
+}
+
+.num-cube-detail {
+  padding-left: 15px;
+  font-size: 1.2em;
 }
 
 h1 {
@@ -46,20 +56,60 @@ div.jumbotron-text-content > h1 {
 
 .numForm {
   margin: auto;
-  /*border: solid 1px purple;*/
-  color: maroon;
+  font-size: 1.2em;
+  color: red;
 }
 
 .main-page {
-  min-height: 700px;
+  min-height: 500px;
+}
+
+.num-cube {
+  border: solid 1px gray;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+.cube-box {
+  margin-bottom: 30px;
+}
+
+.num-cube > h1 {
+
 }
 
 footer {
   background-color: gray;
   color: white;
-  height: 200px;
   width: auto;
   clear: both;
+}
+
+.exp-content {
+  display: block;;
+  color: red;
+}
+.num-symble {
+  border: solid 1px gray;
+  width: 100px;
+  height: 100px;
+  display: inline-table;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/*.num-symble > h1 {
+  color: red;
+}*/
+
+.num-cube > p {
+  display: inline;
+}
+
+.num-cube span {
+  color: red;
+  font-size: 1.2em;
 }
 
 footer.footer {
@@ -68,6 +118,10 @@ footer.footer {
 
 input.col-xs-12 {
   line-height: 3;
+}
+
+.exp-para > p {
+  font-size: 1.3em;
 }
 
 form {
@@ -111,4 +165,19 @@ input.btn-primary {
   border: solid 1px gray;
   border-radius: 5px;
   position: relative;
+}
+
+.num-exp {
+  border: solid 1px gray;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.exp-table {
+  line-height: 1.5;
+  color: maroon;
+}
+
+table.exp-table  td{
+    padding: 10px !important;
 }

@@ -21,8 +21,8 @@
       templateUrl: 'src/templates/about.template.html'
     })
 
-    .state('home.result', {
-      url: '/result',
+    .state('analysis.result', {
+      url: '/analysis.result',
       templateUrl: 'src/templates/nol.template.html'
     })
 
@@ -32,12 +32,12 @@
     })
 
     .state('analysis.spn', {
-      url: '/spiritDetail',
+      url: '/analysis/spiritNum',
       templateUrl: 'src/templates/analysis.spirit-number-detail.template.html'
     })
 
     .state('analysis.inAcNum', {
-      url: '/inAcNumDetail',
+      url: '/analysis/inAcNumDetail',
       templateUrl: 'src/templates/analysis.innate-acquired-number.template.html'
     });
   }

@@ -1,3 +1,86 @@
 <div>
-  <h1>HI</h1>
-</div>
+  <br>
+  <div class="text-center">
+    <h2>先天與後天數</h2>
+    <div class="num-exp bg-success">
+      <table class="exp-table">
+        <tr>
+          <td>□：</td>
+          <td>代表生命靈數。指人生的使命與目標。</td>
+        </tr>
+        <tr>
+          <td>○：</td>
+          <td>代表先天數，指與生俱來的特質。以兩個○最佳，過多過少都不好。</td>
+        </tr>
+        <tr>
+          <td>△：</td>
+          <td>代表後天數，指人生所需的修練。一般人後天數只有兩個△，有四個△代表所擔的責任比較多，奮鬥的目標也比一般人多一層。</td>
+        </tr>
+        <tr>
+          <td>無：</td>
+          <td>代表缺數，指後天有待加強的特質。如果能夠用後天行為或努力補足，就能改善缺數的遺憾。</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <br>
+  <table class="cube-box">
+    <tr>
+      <td><div class="num-cube"><h1>1</h1><span>{{ctrl.lifeNum[1] | NumToImg: "□(使命)"}}</span><span>{{ctrl.innateNum[1] | NumToImg: "○"}}</span><span>{{ctrl.acquiredNum[1] | NumToImg: "△"}}</span></div></td>
+      <td class="num-cube-detail">{{ctrl.resultDetail[1]}}</td>
+    </tr>
+  </table>
+  <table class="cube-box">
+    <tr>
+      <td><div class="num-cube"><h1>2</h1><span>{{ctrl.lifeNum[2] | NumToImg: "□(使命)"}}</span><span>{{ctrl.innateNum[2] | NumToImg: "○"}}</span><span>{{ctrl.acquiredNum[2] | NumToImg: "△"}}</span></div></td>
+      <td class="num-cube-detail">{{ctrl.resultDetail[2]}}</td>
+    </tr>
+  </table>
+  <table class="cube-box">
+    <tr>
+      <td><div class="num-cube"><h1>3</h1><span>{{ctrl.lifeNum[3] | NumToImg: "□(使命)"}}</span><span>{{ctrl.innateNum[3] | NumToImg: "○"}}</span><span>{{ctrl.acquiredNum[3] | NumToImg: "△"}}</span></div></td>
+      <td class="num-cube-detail">{{ctrl.resultDetail[3]}}</td>
+    </tr>
+  </table>
+  <table class="cube-box">
+    <tr>
+      <td><div class="num-cube"><h1>4</h1><span>{{ctrl.lifeNum[4] | NumToImg: "□(使命)"}}</span><span>{{ctrl.innateNum[4] | NumToImg: "○"}}</span><span>{{ctrl.acquiredNum[4] | NumToImg: "△"}}</span></div></td>
+      <td class="num-cube-detail">{{ctrl.resultDetail[4]}}</td>
+    </tr>
+  </table>
+  <table class="cube-box">
+    <tr>
+      <td><div class="num-cube"><h1>5</h1><span>{{ctrl.lifeNum[5] | NumToImg: "□(使命)"}}</span><span>{{ctrl.innateNum[5] | NumToImg: "○"}}</span><span>{{ctrl.acquiredNum[5] | NumToImg: "△"}}</span></div></td>
+      <td class="num-cube-detail">{{ctrl.resultDetail[5]}}</td>
+    </tr>
+  </table>
+  <table class="cube-box">
+    <tr>
+      <td><div class="num-cube"><h1>6</h1><span>{{ctrl.lifeNum[6] | NumToImg: "□(使命)"}}</span><span>{{ctrl.innateNum[6] | NumToImg: "○"}}</span><span>{{ctrl.acquiredNum[6] | NumToImg: "△"}}</span></div></td>
+      <td class="num-cube-detail">{{ctrl.resultDetail[6]}}</td>
+    </tr>
+  </table>
+  <table class="cube-box">
+    <tr>
+      <td><div class="num-cube"><h1>7</h1><span>{{ctrl.lifeNum[7] | NumToImg: "□(使命)"}}</span><span>{{ctrl.innateNum[7] | NumToImg: "○"}}</span><span>{{ctrl.acquiredNum[7] | NumToImg: "△"}}</span></div></td>
+      <td class="num-cube-detail">{{ctrl.resultDetail[7]}}</td>
+    </tr>
+  </table>
+  <table class="cube-box">
+    <tr>
+      <td><div class="num-cube"><h1>8</h1><span>{{ctrl.lifeNum[8] | NumToImg: "□(使命)"}}</span><span>{{ctrl.innateNum[8] | NumToImg: "○"}}</span><span>{{ctrl.acquiredNum[8] | NumToImg: "△"}}</span></div></td>
+      <td class="num-cube-detail">{{ctrl.resultDetail[8]}}</td>
+    </tr>
+  </table>
+  <table class="cube-box">
+    <tr>
+      <td><div class="num-cube"><h1>9</h1><span>{{ctrl.lifeNum[9] | NumToImg: "□(使命)"}}</span><span>{{ctrl.innateNum[9] | NumToImg: "○"}}</span><span>{{ctrl.acquiredNum[9] | NumToImg: "△"}}</span></div></td>
+      <td class="num-cube-detail">{{ctrl.resultDetail[9]}}</td>
+    </tr>
+  </table>
+  <table class="cube-box">
+    <tr>
+      <td><div class="num-cube"><h1>0</h1><span>{{ctrl.lifeNum[0] | NumToImg: "□(使命)"}}</span><span>{{ctrl.innateNum[0] | NumToImg: "○"}}</span><span>{{ctrl.acquiredNum[0] | NumToImg: "△"}}</span></div></td>
+      <td class="num-cube-detail">{{ctrl.resultDetail[0]}}</td>
+    </tr>
+  </table>
